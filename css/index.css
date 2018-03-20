@@ -11,9 +11,12 @@
     right: -5px;
 }
 .header{
+	position: fixed;
 	background: #22262f;
 	height: 40px;
-	color: #7f8289;
+	width: 100%;
+	color: #b4b6bb;
+	z-index: 100;
 }
 .header > div{
 	display: inline-block;
@@ -24,13 +27,15 @@
 	width: 180px;
 }
 .header .logo img{
-	width: 130px;
+	width: 120px;
+	padding-left: 10px;
 }
 .header .user{
 	margin: 8px;
 	padding: 4px;
 	background-color: #111;
 	position: relative;
+	color: white;
 }
 .header .bases{
 	margin-left: 10px;
@@ -43,4 +48,141 @@
 .header .bases .base-atual .selected{
 	font-weight: bold;
 	color: #ff3148;
+}
+.header .bases .select-base .dropdown-button{
+	color: #b9b9b9;
+	font-size: 13px;
+}
+.header .bases .select-base .dropdown-content li > a{
+	padding: 10px;
+}
+.header .options,
+.header .logout,
+.header .view,
+.header .maximize,
+.header .upload{
+	background: red;
+	padding: 5px;
+	color: white;
+	margin-top: 8px;
+	margin-left: 8px;
+	width: 22px;
+	border-radius: 2px;
+	font-size: 13px;
+	cursor: pointer;
+}
+.header .menu-right{
+	float: right;
+}
+.header .logout{
+	margin-right: 10px;
+}
+.header .language{
+	margin-top: 12px;
+}
+.header .language .language-icon{
+	width: 20px;
+	vertical-align: middle;
+}
+.header .language .dropdown-button{
+	color: #b9b9b9;
+	font-size: 11px;
+}
+
+.menu-left{
+	position: fixed;
+	top: 40px;
+	background: #22262f;
+	clear: left;
+	color: white;
+	width: 40px;
+	height: 100%;
+}
+.menu-left .menu-left-item{
+	text-align: center;
+	height: 34px;
+	padding-top: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	border-bottom: solid 1px #555;
+}
+.menu-left .menu-left-item:hover{
+	background: #414652;
+}
+
+.content{
+	position: relative;
+	top: 40px;
+	margin-left: 40px;
+	height: 1000px;
+}
+.content .title{
+	position: fixed;
+	width: 100%;
+	z-index: 90;
+}
+.content .title-divider{
+	width: 100%;
+	height: 10px;
+	top: 40px;
+	position: relative;
+	background: rgba(164,179,87,1);
+	background: -moz-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(117,137,12,1)));
+	background: -webkit-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -o-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -ms-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
+}
+.content .title > div{
+	display: inline-block;
+	float: left;
+	height: 40px;
+}
+.content .title .logo{
+	width: 200px;
+	text-align: center;
+	padding: 8px;
+	background: white;
+}
+.content .title .name{
+	width: calc(90% - 200px);
+	background: #15181f;
+	color: white;
+	padding-left: 10px;
+	line-height: 20px;
+}
+.content .title .name .first{
+	font-size: 20px;
+	font-weight: bold;
+}
+.content .title .name .second{
+	font-size: 14px;
+}
+.content .title .title-menu{
+	width: 10%;
+	background: #15181f;
+	color: white;
+	font-size: 22px;
+	padding: 10px;
+	text-align: right;
+	cursor: pointer;
+}
+.content .conteudo{
+	position: relative;
+	top: 40px;
+}
+.content .conteudo > div{
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+.content .conteudo .conteudo-left{
+	width: 200px;
+	background: #272a31;
+	color: #ddd;
+}
+.filtros .filtro .select select{
+	display: block;
 }
