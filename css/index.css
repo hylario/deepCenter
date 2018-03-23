@@ -183,6 +183,91 @@
 	background: #272a31;
 	color: #ddd;
 }
-.filtros .filtro .select select{
+.filtros{
+	font-size: 11px;
+	color: black;
+}
+.filtros .filtro-title{
+	padding-left: 20px;
+	padding-top: 15px;
+	clear: left;
+	color: #ddd;
+}
+.filtros .filtro{
+	padding: 0px 20px;
+}
+.filtros .filtro .select,
+.filtros .filtro .checkbox{
+	background: white;
+	height: 15px;
+	float: left;
+	text-align: center;
+	border-left: 1px solid #ccc;
+}
+.filtros select{
 	display: block;
+	background-color: white;
+	width: 100%;
+	padding: 0px; 
+	border: none; 
+	border-radius: 0px; 
+	height: inherit;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.filtros .filtro .select{
+	width: 70%;
+}
+.filtros .filtro .checkbox{
+	width: 30%;
+	padding-top: 1px;
+}
+.filtros .filtro .checkbox input{
+	opacity: 1;
+	pointer-events: all; 
+}
+.filtros .selecao-atual textarea{
+	margin-left: 20px;
+	width: 80%;
+	border-radius: 2px;
+	background: white;
+	resize: none;
+}
+.filtros .faq{
+	padding: 20px;
+}
+.filtros .faq select{
+	font-size: 13px;
+	height: 30px;
+}
+.filtros .btn-limpar{
+	margin-left: 20px;
+	width: 80%;
+	border-radius: 50px;
+	color: #ddd;
+	border: 1px solid black;
+	background-color: #727F96;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#727F96), to(#000000));
+	background-image: -webkit-linear-gradient(top, #727F96, #000000);
+	background-image: -moz-linear-gradient(top, #727F96, #000000);
+	background-image: -ms-linear-gradient(top, #727F96, #000000);
+	background-image: -o-linear-gradient(top, #727F96, #000000);
+	background-image: linear-gradient(to bottom, #727F96, #000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#727F96, endColorstr=#000000);
+}
+.filtros .btn-limpar:hover{
+	background-color: #5b667a;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5b667a), to(#1a1a1a));
+	background-image: -webkit-linear-gradient(top, #5b667a, #1a1a1a);
+	background-image: -moz-linear-gradient(top, #5b667a, #1a1a1a);
+	background-image: -ms-linear-gradient(top, #5b667a, #1a1a1a);
+	background-image: -o-linear-gradient(top, #5b667a, #1a1a1a);
+	background-image: linear-gradient(to bottom, #5b667a, #1a1a1a);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#5b667a, endColorstr=#1a1a1a);
+}
+.filtros .updated{
+	font-size: 10px;
+	color: #ddd;
+	text-align: center;
+	padding-top: 10px;
 }
