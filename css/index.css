@@ -311,7 +311,7 @@ progress::-webkit-progress-bar {
 }
 progress::-webkit-progress-value {
 	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
-	background: rgb(63, 179, 63);
+	background: #7d901a;
 	
 	/* Looks great, now animating it */
 	background-size: 25px 14px, 100% 100%, 100% 100%;
@@ -324,16 +324,21 @@ progress::-webkit-progress-value {
 .tabelaDiv{
 	clear: both;
 }
-.tabela{
+.tabela tr, .tabela th{
 	text-transform: uppercase;
+	border-radius: 0px !important;
 }
 .tabela th{
 	text-align: center;
-	background: rgb(63, 179, 63);
+	background: #7d901a;
+	padding: 4px;
 }
 .tabela td{
 	min-width: 90px;
 	padding: 0px;
 	border-bottom: 1px solid #ccc;
 	text-align: center;
+}
+.tabela tr:nth-child(even){
+	background: #ddd;
 }

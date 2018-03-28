@@ -35,7 +35,7 @@ $(document).ready(function(){
                 datasets: [{
                     data: [value, 100 - value],
                     backgroundColor: [
-                        'rgb(63, 179, 63)'
+                        '#7d901a'
                     ]
                 }],
                 labels: [
@@ -57,7 +57,7 @@ $(document).ready(function(){
         var tr = $('<tr>');
         
         tr.append($('<td style="text-align:left;">').html(v));
-        tr.append($('<td>').html(Math.round(Math.random() * 27)));
+        tr.append($('<td style="font-weight:bold;">').html(Math.round(Math.random() * 27)));
         tr.append($('<td>').html(Math.round(Math.random() * 17)));
         tr.append($('<td>').html(Math.round(Math.random() * 17)));
         tr.append($('<td>').html(Math.round(Math.random() * 17)));
